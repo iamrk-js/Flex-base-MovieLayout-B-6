@@ -39,19 +39,23 @@ body {
     font-style: italic;
     font-weight: 700;
 }
-.navbar{
+
+.navbar {
     background-color: var(--color-primary);
 }
+
 .navbar ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     flex-direction: column;
 }
+
 .navbar ul li {
     flex-grow: 1;
     text-align: center;
 }
+
 .navbar ul li a {
     display: block;
     color: var(--color-dark);
@@ -61,15 +65,51 @@ body {
     padding: 0.625rem;
     transition: all .3s ease-in-out;
 }
+
 .navbar ul li a:hover,
 .navbar ul li a:active,
-.navbar ul li a:focus{
+.navbar ul li a:focus {
     background-color: var(--color-dark);
-    color:var(--color-primary) ;
+    color: var(--color-primary);
 }
+
 /* ######### main content css ############ */
 .main-content-area {
-    background-color:hotpink;
+    padding: 1.25rem;
+}
+
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    margin-bottom: 1.875rem;
+}
+
+.post-img {
+    height: 280px;
+}
+
+.post img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.post h2 {
+    background-color: var(--color-primary);
+    padding: 1.875rem;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.post p {
+    color: var(--color-dark);
+    padding: 2.5rem;
+    background-color: var(--color-white);
 }
 
 .sidebar-right {
@@ -85,7 +125,7 @@ body {
 
 
 @media all and (min-width:600px) {
-     .navbar ul{
+    .navbar ul {
         flex-direction: row;
     }
 }
@@ -95,7 +135,20 @@ body {
     .content-area {
         display: flex;
     }
-    .navbar ul{
+
+    .post-half {
+        width: 49%;
+    }
+
+    .post-one-third {
+        width: 32%;
+    }
+
+    .navbar ul {
         flex-direction: row;
+    }
+
+    .post-img {
+        height: 450px;
     }
 }
