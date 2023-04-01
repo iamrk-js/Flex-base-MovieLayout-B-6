@@ -16,3 +16,18 @@ a:visited {
 ul {
     list-style: none;
 }
+
+.img-fluid {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.section-heading {
+    margin: 1.25rem 0;
+    text-align: center;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    color: var(--color-dark);
+}
+

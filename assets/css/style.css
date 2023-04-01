@@ -5,8 +5,13 @@
     font-family: 'Asap', sans-serif;
 }
 
+html {
+    line-height: 1.5;
+}
+
 body {
     background-color: var(--color-secondary);
+
 }
 
 /* ########## Header css ########### */
@@ -116,6 +121,93 @@ body {
     background-color: blueviolet;
 }
 
+/* ######## watch section css ######## */
+.watch-card {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.watch-content {
+    padding: 1.87rem;
+}
+
+.watch-content h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.movie-info span {
+    margin-right: 1rem;
+}
+
+.movie-story {
+    margin: .5rem 0 1rem;
+}
+
+.movie-info a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+/* ######## download css ######## */
+.download-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-cast img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.download-img {
+    background-color: #000;
+}
+
+.download-icon {
+    display: flex;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-gener h4,
+.download-cast h4 {
+    flex-basis: 20%;
+}
+
+.download-info {
+    padding: 1rem;
+    background-color: var(--color-white);
+}
+
+.download-gener,
+.download-cast {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.download-rating {
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
 /* ######## footer css ######## */
 
 .footer {
@@ -136,6 +228,11 @@ body {
         display: flex;
     }
 
+    .sidebar-right {
+        background-color: blueviolet;
+        flex: 0 0 400px;
+    }
+
     .post-half {
         width: 49%;
     }
@@ -150,5 +247,33 @@ body {
 
     .post-img {
         height: 450px;
+    }
+
+    .watch-card {
+        flex-direction: row;
+    }
+
+    .watch-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .watch-img.order-1 {
+        order: 1;
+    }
+
+    .download-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .download-info {
+        flex-grow: 1;
+    }
+
+    .download-gener h4,
+    .download-cast h4 {
+        flex-basis: 80px;
     }
 }
